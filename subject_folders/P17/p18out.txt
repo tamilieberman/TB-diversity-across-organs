@@ -1,0 +1,381 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+Usings scripts directory: /groups/kishony/tami/illumina_pipeline_cluster_minimal/
+Genome : /groups/kishony/Reference_Genomes/MTB_anc/
+Number of samples read from csv file: 70
+
+Reading reference genome...
+Create diversity.mat and Create quals.mat for each sample... 
+
+
+Finding positions with at least 1 fixed mutation...
+Job <2375952> is submitted to queue <mini>.
+Job <2375954> is submitted to queue <mini>.
+Job <2375956> is submitted to queue <mini>.
+Job <2375958> is submitted to queue <mini>.
+Job <2375960> is submitted to queue <mini>.
+Job <2375962> is submitted to queue <mini>.
+Job <2375964> is submitted to queue <mini>.
+Job <2375966> is submitted to queue <mini>.
+Job <2375968> is submitted to queue <mini>.
+Job <2375970> is submitted to queue <mini>.
+Job <2375972> is submitted to queue <mini>.
+Job <2375974> is submitted to queue <mini>.
+Job <2375976> is submitted to queue <mini>.
+Job <2375978> is submitted to queue <mini>.
+Job <2375980> is submitted to queue <mini>.
+Job <2375982> is submitted to queue <mini>.
+Job <2375984> is submitted to queue <mini>.
+Job <2375986> is submitted to queue <mini>.
+Job <2375988> is submitted to queue <mini>.
+Job <2375990> is submitted to queue <mini>.
+Job <2375992> is submitted to queue <mini>.
+Job <2375994> is submitted to queue <mini>.
+Job <2375996> is submitted to queue <mini>.
+Job <2375998> is submitted to queue <mini>.
+Job <2376000> is submitted to queue <mini>.
+Job <2376002> is submitted to queue <mini>.
+Job <2376004> is submitted to queue <mini>.
+Job <2376006> is submitted to queue <mini>.
+Job <2376008> is submitted to queue <mini>.
+Job <2376010> is submitted to queue <mini>.
+Job <2376012> is submitted to queue <mini>.
+Job <2376014> is submitted to queue <mini>.
+Job <2376016> is submitted to queue <mini>.
+Job <2376018> is submitted to queue <mini>.
+Job <2376020> is submitted to queue <mini>.
+Job <2376022> is submitted to queue <mini>.
+Job <2376024> is submitted to queue <mini>.
+Job <2376026> is submitted to queue <mini>.
+Job <2376028> is submitted to queue <mini>.
+Job <2376030> is submitted to queue <mini>.
+Job <2376032> is submitted to queue <mini>.
+Job <2376034> is submitted to queue <mini>.
+Job <2376036> is submitted to queue <mini>.
+Job <2376038> is submitted to queue <mini>.
+Job <2376040> is submitted to queue <mini>.
+Job <2376042> is submitted to queue <mini>.
+Job <2376044> is submitted to queue <mini>.
+Job <2376046> is submitted to queue <mini>.
+Job <2376048> is submitted to queue <mini>.
+Job <2376050> is submitted to queue <mini>.
+Job <2376052> is submitted to queue <mini>.
+Job <2376054> is submitted to queue <mini>.
+Job <2376056> is submitted to queue <mini>.
+Job <2376058> is submitted to queue <mini>.
+Job <2376060> is submitted to queue <mini>.
+Job <2376062> is submitted to queue <mini>.
+Job <2376064> is submitted to queue <mini>.
+Job <2376066> is submitted to queue <mini>.
+Job <2376068> is submitted to queue <mini>.
+Job <2376070> is submitted to queue <mini>.
+Job <2376072> is submitted to queue <mini>.
+Job <2376074> is submitted to queue <mini>.
+Job <2376076> is submitted to queue <mini>.
+Job <2376078> is submitted to queue <mini>.
+Job <2376080> is submitted to queue <mini>.
+Job <2376082> is submitted to queue <mini>.
+Job <2376084> is submitted to queue <mini>.
+Job <2376086> is submitted to queue <mini>.
+Job <2376088> is submitted to queue <mini>.
+Job <2376090> is submitted to queue <mini>.
+    19
+
+    47
+
+    58
+
+    67
+
+    70
+
+Not considering 584 positions where all samples have a variant compared to the reference...
+Found 727positions where provided vcf called a variant in at least one sample with FQ score < -30
+
+Finding single nucleotide positions with within-sample polymorphisms...Job <2376144> is submitted to queue <mini>.
+Job <2376147> is submitted to queue <mini>.
+Job <2376148> is submitted to queue <mini>.
+Job <2376149> is submitted to queue <mini>.
+Job <2376150> is submitted to queue <mini>.
+Job <2376151> is submitted to queue <mini>.
+Job <2376152> is submitted to queue <mini>.
+Job <2376153> is submitted to queue <mini>.
+Job <2376154> is submitted to queue <mini>.
+Job <2376155> is submitted to queue <mini>.
+Job <2376156> is submitted to queue <mini>.
+Job <2376157> is submitted to queue <mini>.
+Job <2376158> is submitted to queue <mini>.
+Job <2376159> is submitted to queue <mini>.
+Job <2376160> is submitted to queue <mini>.
+Job <2376161> is submitted to queue <mini>.
+Job <2376162> is submitted to queue <mini>.
+Job <2376163> is submitted to queue <mini>.
+Job <2376164> is submitted to queue <mini>.
+Job <2376165> is submitted to queue <mini>.
+Job <2376166> is submitted to queue <mini>.
+Job <2376167> is submitted to queue <mini>.
+Job <2376168> is submitted to queue <mini>.
+Job <2376169> is submitted to queue <mini>.
+Job <2376170> is submitted to queue <mini>.
+Job <2376171> is submitted to queue <mini>.
+Job <2376172> is submitted to queue <mini>.
+Job <2376173> is submitted to queue <mini>.
+Job <2376174> is submitted to queue <mini>.
+Job <2376175> is submitted to queue <mini>.
+Job <2376176> is submitted to queue <mini>.
+Job <2376179> is submitted to queue <mini>.
+Job <2376180> is submitted to queue <mini>.
+Job <2376181> is submitted to queue <mini>.
+Job <2376182> is submitted to queue <mini>.
+Job <2376183> is submitted to queue <mini>.
+Job <2376185> is submitted to queue <mini>.
+Job <2376187> is submitted to queue <mini>.
+Job <2376189> is submitted to queue <mini>.
+Job <2376191> is submitted to queue <mini>.
+Job <2376193> is submitted to queue <mini>.
+Job <2376194> is submitted to queue <mini>.
+Job <2376196> is submitted to queue <mini>.
+Job <2376198> is submitted to queue <mini>.
+Job <2376200> is submitted to queue <mini>.
+Job <2376202> is submitted to queue <mini>.
+Job <2376204> is submitted to queue <mini>.
+Job <2376206> is submitted to queue <mini>.
+Job <2376208> is submitted to queue <mini>.
+Job <2376210> is submitted to queue <mini>.
+Job <2376212> is submitted to queue <mini>.
+Job <2376214> is submitted to queue <mini>.
+Job <2376216> is submitted to queue <mini>.
+Job <2376218> is submitted to queue <mini>.
+Job <2376220> is submitted to queue <mini>.
+Job <2376222> is submitted to queue <mini>.
+Job <2376224> is submitted to queue <mini>.
+Job <2376226> is submitted to queue <mini>.
+Job <2376228> is submitted to queue <mini>.
+Job <2376230> is submitted to queue <mini>.
+Job <2376232> is submitted to queue <mini>.
+Job <2376234> is submitted to queue <mini>.
+Job <2376236> is submitted to queue <mini>.
+Job <2376238> is submitted to queue <mini>.
+Job <2376240> is submitted to queue <mini>.
+Job <2376242> is submitted to queue <mini>.
+Job <2376244> is submitted to queue <mini>.
+Job <2376246> is submitted to queue <mini>.
+Job <2376248> is submitted to queue <mini>.
+Job <2376250> is submitted to queue <mini>.
+    68
+
+    68
+
+    68
+
+    68
+
+    68
+
+    68
+
+    69
+
+    69
+
+    69
+
+    69
+
+    69
+
+    69
+
+    70
+
+Found 114 positions with within-sample polymorphism that meets loose parameters in at least 1 sample 
+
+Considering 62 positions previously specified 
+
+Acquiring detailed information at each potential position...
+Gathering quality scores at each candidate position ...
+Loading quals matrix for sample: 1  
+Loading quals matrix for sample: 2  
+Loading quals matrix for sample: 3  
+Loading quals matrix for sample: 4  
+Loading quals matrix for sample: 5  
+Loading quals matrix for sample: 6  
+Loading quals matrix for sample: 7  
+Loading quals matrix for sample: 8  
+Loading quals matrix for sample: 9  
+Loading quals matrix for sample: 10  
+Loading quals matrix for sample: 11  
+Loading quals matrix for sample: 12  
+Loading quals matrix for sample: 13  
+Loading quals matrix for sample: 14  
+Loading quals matrix for sample: 15  
+Loading quals matrix for sample: 16  
+Loading quals matrix for sample: 17  
+Loading quals matrix for sample: 18  
+Loading quals matrix for sample: 19  
+Loading quals matrix for sample: 20  
+Loading quals matrix for sample: 21  
+Loading quals matrix for sample: 22  
+Loading quals matrix for sample: 23  
+Loading quals matrix for sample: 24  
+Loading quals matrix for sample: 25  
+Loading quals matrix for sample: 26  
+Loading quals matrix for sample: 27  
+Loading quals matrix for sample: 28  
+Loading quals matrix for sample: 29  
+Loading quals matrix for sample: 30  
+Loading quals matrix for sample: 31  
+Loading quals matrix for sample: 32  
+Loading quals matrix for sample: 33  
+Loading quals matrix for sample: 34  
+Loading quals matrix for sample: 35  
+Loading quals matrix for sample: 36  
+Loading quals matrix for sample: 37  
+Loading quals matrix for sample: 38  
+Loading quals matrix for sample: 39  
+Loading quals matrix for sample: 40  
+Loading quals matrix for sample: 41  
+Loading quals matrix for sample: 42  
+Loading quals matrix for sample: 43  
+Loading quals matrix for sample: 44  
+Loading quals matrix for sample: 45  
+Loading quals matrix for sample: 46  
+Loading quals matrix for sample: 47  
+Loading quals matrix for sample: 48  
+Loading quals matrix for sample: 49  
+Loading quals matrix for sample: 50  
+Loading quals matrix for sample: 51  
+Loading quals matrix for sample: 52  
+Loading quals matrix for sample: 53  
+Loading quals matrix for sample: 54  
+Loading quals matrix for sample: 55  
+Loading quals matrix for sample: 56  
+Loading quals matrix for sample: 57  
+Loading quals matrix for sample: 58  
+Loading quals matrix for sample: 59  
+Loading quals matrix for sample: 60  
+Loading quals matrix for sample: 61  
+Loading quals matrix for sample: 62  
+Loading quals matrix for sample: 63  
+Loading quals matrix for sample: 64  
+Loading quals matrix for sample: 65  
+Loading quals matrix for sample: 66  
+Loading quals matrix for sample: 67  
+Loading quals matrix for sample: 68  
+Loading quals matrix for sample: 69  
+Loading quals matrix for sample: 70  
+Gathering detailed read information from MATLAB counts matrix at each candidate position...
+Loading counts matrix for sample: 1  
+Loading counts matrix for sample: 2  
+Loading counts matrix for sample: 3  
+Loading counts matrix for sample: 4  
+Loading counts matrix for sample: 5  
+Loading counts matrix for sample: 6  
+Loading counts matrix for sample: 7  
+Loading counts matrix for sample: 8  
+Loading counts matrix for sample: 9  
+Loading counts matrix for sample: 10  
+Loading counts matrix for sample: 11  
+Loading counts matrix for sample: 12  
+Loading counts matrix for sample: 13  
+Loading counts matrix for sample: 14  
+Loading counts matrix for sample: 15  
+Loading counts matrix for sample: 16  
+Loading counts matrix for sample: 17  
+Loading counts matrix for sample: 18  
+Loading counts matrix for sample: 19  
+Loading counts matrix for sample: 20  
+Loading counts matrix for sample: 21  
+Loading counts matrix for sample: 22  
+Loading counts matrix for sample: 23  
+Loading counts matrix for sample: 24  
+Loading counts matrix for sample: 25  
+Loading counts matrix for sample: 26  
+Loading counts matrix for sample: 27  
+Loading counts matrix for sample: 28  
+Loading counts matrix for sample: 29  
+Loading counts matrix for sample: 30  
+Loading counts matrix for sample: 31  
+Loading counts matrix for sample: 32  
+Loading counts matrix for sample: 33  
+Loading counts matrix for sample: 34  
+Loading counts matrix for sample: 35  
+Loading counts matrix for sample: 36  
+Loading counts matrix for sample: 37  
+Loading counts matrix for sample: 38  
+Loading counts matrix for sample: 39  
+Loading counts matrix for sample: 40  
+Loading counts matrix for sample: 41  
+Loading counts matrix for sample: 42  
+Loading counts matrix for sample: 43  
+Loading counts matrix for sample: 44  
+Loading counts matrix for sample: 45  
+Loading counts matrix for sample: 46  
+Loading counts matrix for sample: 47  
+Loading counts matrix for sample: 48  
+Loading counts matrix for sample: 49  
+Loading counts matrix for sample: 50  
+Loading counts matrix for sample: 51  
+Loading counts matrix for sample: 52  
+Loading counts matrix for sample: 53  
+Loading counts matrix for sample: 54  
+Loading counts matrix for sample: 55  
+Loading counts matrix for sample: 56  
+Loading counts matrix for sample: 57  
+Loading counts matrix for sample: 58  
+Loading counts matrix for sample: 59  
+Loading counts matrix for sample: 60  
+Loading counts matrix for sample: 61  
+Loading counts matrix for sample: 62  
+Loading counts matrix for sample: 63  
+Loading counts matrix for sample: 64  
+Loading counts matrix for sample: 65  
+Loading counts matrix for sample: 66  
+Loading counts matrix for sample: 67  
+Loading counts matrix for sample: 68  
+Loading counts matrix for sample: 69  
+Loading counts matrix for sample: 70  
+>> 
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@clarinet002-065.orchestra>
+Subject: Job 2375945: <matlab -r "scriptsdirectory='/groups/kishony/tami/illumina_pipeline_cluster_minimal/'; path(scriptsdirectory,path); build_mutation_table_master_tb"> Done
+
+Job <matlab -r "scriptsdirectory='/groups/kishony/tami/illumina_pipeline_cluster_minimal/'; path(scriptsdirectory,path); build_mutation_table_master_tb"> was submitted from host <loge.orchestra> by user <tdl7> in cluster <hms_orchestra>.
+Job was executed on host(s) <clarinet002-065.orchestra>, in queue <priority>, as user <tdl7> in cluster <hms_orchestra>.
+</home/tdl7> was used as the home directory.
+</groups/kishony/tami/case_2016_05_by_pt/P17> was used as the working directory.
+Started at Thu May 19 20:09:57 2016
+Results reported at Thu May 19 20:32:21 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -r "scriptsdirectory='/groups/kishony/tami/illumina_pipeline_cluster_minimal/'; path(scriptsdirectory,path); build_mutation_table_master_tb"
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    906.75 sec.
+    Max Memory :       912 MB
+    Max Swap   :      5085 MB
+
+    Max Processes  :         5
+    Max Threads    :        47
+
+The output (if any) is above this job summary.
+

@@ -1,0 +1,145 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+Usings scripts directory: /groups/kishony/tami/illumina_pipeline_cluster_minimal/
+Genome : /groups/kishony/Reference_Genomes/MTB_anc/
+Number of samples read from csv file: 71
+
+Reading reference genome...
+Create diversity.mat and Create quals.mat for each sample... 
+
+
+Finding positions with at least 1 fixed mutation...
+Job <2358721> is submitted to queue <mini>.
+Job <2358724> is submitted to queue <mini>.
+Job <2358728> is submitted to queue <mini>.
+Job <2358732> is submitted to queue <mini>.
+Job <2358736> is submitted to queue <mini>.
+Job <2358740> is submitted to queue <mini>.
+Job <2358746> is submitted to queue <mini>.
+Job <2358751> is submitted to queue <mini>.
+Job <2358756> is submitted to queue <mini>.
+Job <2358762> is submitted to queue <mini>.
+Job <2358767> is submitted to queue <mini>.
+Job <2358772> is submitted to queue <mini>.
+Job <2358777> is submitted to queue <mini>.
+Job <2358782> is submitted to queue <mini>.
+Job <2358787> is submitted to queue <mini>.
+Job <2358792> is submitted to queue <mini>.
+Job <2358799> is submitted to queue <mini>.
+Job <2358804> is submitted to queue <mini>.
+Job <2358809> is submitted to queue <mini>.
+Job <2358814> is submitted to queue <mini>.
+Job <2358819> is submitted to queue <mini>.
+Job <2358824> is submitted to queue <mini>.
+Job <2358832> is submitted to queue <mini>.
+Job <2358837> is submitted to queue <mini>.
+Job <2358842> is submitted to queue <mini>.
+Job <2358848> is submitted to queue <mini>.
+Job <2358852> is submitted to queue <mini>.
+Job <2358858> is submitted to queue <mini>.
+Job <2358864> is submitted to queue <mini>.
+Job <2358869> is submitted to queue <mini>.
+Job <2358874> is submitted to queue <mini>.
+Job <2358878> is submitted to queue <mini>.
+Job <2358884> is submitted to queue <mini>.
+Job <2358889> is submitted to queue <mini>.
+Job <2358893> is submitted to queue <mini>.
+Job <2358899> is submitted to queue <mini>.
+Job <2358904> is submitted to queue <mini>.
+Job <2358909> is submitted to queue <mini>.
+Job <2358914> is submitted to queue <mini>.
+Job <2358919> is submitted to queue <mini>.
+Job <2358924> is submitted to queue <mini>.
+Job <2358929> is submitted to queue <mini>.
+Job <2358934> is submitted to queue <mini>.
+Job <2358940> is submitted to queue <mini>.
+Job <2358945> is submitted to queue <mini>.
+Job <2358950> is submitted to queue <mini>.
+Job <2358955> is submitted to queue <mini>.
+Job <2358960> is submitted to queue <mini>.
+Job <2358965> is submitted to queue <mini>.
+Job <2358970> is submitted to queue <mini>.
+Job <2358975> is submitted to queue <mini>.
+Job <2358980> is submitted to queue <mini>.
+Job <2358985> is submitted to queue <mini>.
+Job <2358990> is submitted to queue <mini>.
+Job <2358995> is submitted to queue <mini>.
+Job <2359000> is submitted to queue <mini>.
+Job <2359005> is submitted to queue <mini>.
+Job <2359010> is submitted to queue <mini>.
+Job <2359015> is submitted to queue <mini>.
+Job <2359020> is submitted to queue <mini>.
+Job <2359026> is submitted to queue <mini>.
+Job <2359031> is submitted to queue <mini>.
+Job <2359036> is submitted to queue <mini>.
+Job <2359042> is submitted to queue <mini>.
+Job <2359048> is submitted to queue <mini>.
+Job <2359053> is submitted to queue <mini>.
+Job <2359059> is submitted to queue <mini>.
+Job <2359064> is submitted to queue <mini>.
+Job <2359069> is submitted to queue <mini>.
+Job <2359074> is submitted to queue <mini>.
+Job <2359079> is submitted to queue <mini>.
+    40
+
+    69
+
+    71
+
+{Error using load
+Unable to read file '/groups/kishony/tami/temp//vcf_P17-Lung4-A4.mat'. No such
+file or directory.
+
+Error in generate_positions (line 36)
+    pos=load([TEMPORARYFOLDER '/vcf_' SampleNames{i} '.mat']);
+
+
+Error in build_mutation_table_master_tb (line 108)
+cp = generate_positions(SampleDirs, SampleNames, looseFQmax,
+RUN_ON_COMPUTING_CLUSTER, jobsubmitoptions_short);
+
+} 
+>> 
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@clarinet002-065.orchestra>
+Subject: Job 2358684: <matlab -r "scriptsdirectory='/groups/kishony/tami/illumina_pipeline_cluster_minimal/'; path(scriptsdirectory,path); build_mutation_table_master_tb"> Done
+
+Job <matlab -r "scriptsdirectory='/groups/kishony/tami/illumina_pipeline_cluster_minimal/'; path(scriptsdirectory,path); build_mutation_table_master_tb"> was submitted from host <loge.orchestra> by user <tdl7> in cluster <hms_orchestra>.
+Job was executed on host(s) <clarinet002-065.orchestra>, in queue <priority>, as user <tdl7> in cluster <hms_orchestra>.
+</home/tdl7> was used as the home directory.
+</groups/kishony/tami/case_2016_05_by_pt/P17> was used as the working directory.
+Started at Thu May 19 17:50:49 2016
+Results reported at Thu May 19 17:56:42 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -r "scriptsdirectory='/groups/kishony/tami/illumina_pipeline_cluster_minimal/'; path(scriptsdirectory,path); build_mutation_table_master_tb"
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :    203.08 sec.
+    Max Memory :       258 MB
+    Max Swap   :      3752 MB
+
+    Max Processes  :         5
+    Max Threads    :        37
+
+The output (if any) is above this job summary.
+
