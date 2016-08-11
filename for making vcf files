@@ -1,0 +1,11 @@
+#These are the commands used to generate the pileup and vcf files upon which build_candidate_mutation_table_tb.m depends 
+
+cutadapt -a  adapter CTGTCTCTTAT reads_1.fastq  > cut_reads_1.fastq
+cutadapt -a  adapter CTGTCTCTTAT cut_reads_1.fastq  > cut_reads_2.fastq
+sickle pe -f cut_reads_1.fastq -r cut_reads_2.fastq -t sanger -o filter_reads_1.fastq -p filter_reads_2.fastq -s singles.fastq -q 20  -l 50 -x -n
+bowtie2 -X 2000 --very-sensitive --n-ceil 0,0.01 -x  genome_bowtie2 -1  filter_reads_1.fastq -2 filter_reads_2.fastq -S aligned.sam
+samtools view -bS -o aligned.bam aligned.sam
+samtools sort aligned.bam aligned.sorted
+samtools mpileup -q30 -s -O -x -d3000 -f genome.fasta aligned.sorted.bam > strain.pileup
+samtools mpileup -q30 -d3000 -ugf genome.fasta aligned.sorted.bam > strain
+bcftools call -c strain > strain.vcf 
