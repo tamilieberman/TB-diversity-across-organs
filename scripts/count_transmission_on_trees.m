@@ -58,7 +58,7 @@ while numel(unaccounted_for_shared_mutations)>0
     genotypes_containing_shared_mutation=find(sum(genotypes(:,unaccounted_for_shared_mutations),2)>0 & (genotypes_in_destination));
         
     if isempty(genotypes_containing_shared_mutation)
-        error(1,'did not find a genotype with unaccoutned for mutation in destination organ');
+        error(1,'did not find a genotype with unaccounted for mutation in destination organ');
     end
     
     minmuts=min(sum(genotypes(genotypes_containing_shared_mutation,:),2));
@@ -76,5 +76,5 @@ end
 %% sanity check
 
 if numtranmissions_from_lung==0
-    error('no transmissions')
+    fprintf(1,'Warning: no transmissions');
 end
