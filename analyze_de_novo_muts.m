@@ -49,6 +49,8 @@ subjects_with_multiple_strains=[11 15 28 37];
 sites={'Lung1','Lung2','Lung3','Lung4','Lung5','Lung6','Eta','Liver','Spleen','SerousFluid','SerousFluid2','Lymph','LungPus'};
 site_colors={'MidnightBlue','CornflowerBlue', 'Blue', 'DarkTurquoise','LightBlue','Teal','Green','DeepPink','Purple','Orange','DeepPink', 'Yellow', 'Maroon','Maroon', 'Maroon', 'Maroon', 'Maroon','Maroon'};
 
+long_site_names={'Top_right_lung','Middle_right_lung','Bottom_right_lung','Top_left_lung','Middle_right_lung','Bottom_right_lung','Endotracheal_aspirate','Liver','Spleen','Serous_Fluid','Serous_Fluid_2','Lymph_node','Lung_pus'};
+
 
 %% Initialize
 
@@ -75,6 +77,7 @@ fid_tableS1=fopen([masterdir '/csvfiles_generated/forsupptable2.csv'],'w');
 fid_tableS2=fopen([masterdir '/csvfiles_generated/forsupptable3.csv'],'w');
 fid_tableS3=fopen([masterdir '/csvfiles_generated/forsupptable4.csv'],'w');
 
+fid_Biosample=fopen([masterdir '/csvfiles_generated/forBiosample.csv'],'w');
 
 %% Make empty data structures
 
@@ -116,6 +119,15 @@ max_distance_between_genotypes=zeros(numel(subjects),1);
 max_distance_between_genotypes_in_eta=nan(numel(subjects),1);
 
 
+%% load in info about subjects
+load([masterdir '/tools/prev_HIV_dx'])
+load([masterdir '/tools/collection_dates'])
+load([masterdir '/tools/on_arvs_at_admission'])
+load([masterdir '/tools/subject_sex'])
+load([masterdir '/tools/subject_age'])
+
+
+
 %% Call genotypes by subject
 
 for k=1:numel(subjects)
@@ -152,7 +164,21 @@ for k=1:numel(subjects)
     end
     fprintf(fid_tableS2,'\n');
     
+    %% For uploading to SRA
     
+    for i=1:numel(SampleNames)
+        fprintf(fid_Biosample,[SampleNames{i} ',PRJNA323744,Mycobacterium tuberculosis,' SampleNames{i} ...
+            ',Douglas Wilson,' collection_date{k} ',South Africa: Kwazulu-Natal,Homo sapiens,Tuberculosis,Morgue,29.6483 S 30.3318 E,'...
+            num2str(subject_age(k)) ',Postmortem,']);
+        if prev_HIV_dx(k)==0
+            fprintf(fid_Biosample,'Negative,No,');
+        elseif prev_HIV_dx(k)==-1
+            fprintf(fid_Biosample,'Positive,No,');
+        else
+            fprintf(fid_Biosample,'Positive,Yes,');
+        end
+        fprintf(fid_Biosample,[on_arvs_at_admission{k} ',' sex{k} ',P' num2str(k) ',' long_site_names{isolate_compartments(i)} '\n']);
+    end
     
     
     %% save basic stats
@@ -492,6 +518,7 @@ for k=1:numel(subjects)
     end
 end
 
+stop
 
 cd(masterdir)
 

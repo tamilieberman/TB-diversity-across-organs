@@ -20,6 +20,7 @@ subjects_with_multiple_strains=[11    15    28    37];
 
 min_average_coverage_to_include_sample = 5;
 
+mask_troublesome_genes=0;
 
 % for finding fixed mutations between samples
 max_fraction_ambigious_samples = .9;
@@ -91,6 +92,12 @@ NTs='ATCG';
 
 num_samples_removed_based_on_coverage=zeros(size(subjects));
 
+num_otherwise_good_muts_in_troublesome_genes=0;
+num_mutations_removed_by_alt_PPE_filter=0;
+num_mutations_removed_by_alt_PPE_filter_inPPEgenes=0;
+
+load([REFGENOMEFOLDER '/genesExcludedInComas2010']);
+
 
 %% Detect mutations within each subject
 
@@ -156,7 +163,7 @@ for k=1:numel(subjects)
     
     
     %% remove adjacent covarying snps which might arise from PPE variation or recombination
-    % this approach only makese sense for subjects without multiple
+    % this approach only makes sense for subjects without multiple
     % lineages, where the expected density of SNPs is low
     % in subjects with multiple lineages, these mutations will be filtered
     % out later, by overall PCA analysis 
@@ -216,6 +223,8 @@ for k=1:numel(subjects)
     %too many impure samples OR
     %many impure strains, but too few passed filters
     
+    
+
     
     %% find lineage determining mutations
     
@@ -310,13 +319,16 @@ for k=1:numel(subjects)
         num_muts_seperating_strains=[sum(coeff2(:,1)<-cutoff_for_PCA_analysis) sum(coeff2(:,1)>cutoff_for_PCA_analysis)];
     end
     
+
+
     %% remove bad postions
     
     diversemutation(bad_positions_diverse_strict,:)=0;
     fixedmutation(bad_positions_diverse_strict,:)=0;
-    %  diversemutation(ismember(p,problematic_positions_on_reference_genome),:)=0; %manually done to remove false positives
     
     hasmutation=fixedmutation | diversemutation;
+    
+
     
     %% global lineages
     
@@ -351,7 +363,20 @@ for k=1:numel(subjects)
         num_muts_seperating_strains=0;
     end
     
+    %% if option turned on, mask de novo mutations in PE, PPE, PGRS, IS, and phage genes
+    % gene names obtained from Tuberculist
     
+    if mask_troublesome_genes==1
+        locustags={annotations(:).locustag};
+        locustags(cellfun(@isempty,locustags))={'int'};
+        in_troublesome_genes=ismember(locustags,genesExcludedInComas2010);
+        
+        num_otherwise_good_muts_in_troublesome_genes=num_otherwise_good_muts_in_troublesome_genes + sum(goodpos' & in_troublesome_genes);
+        goodpos(in_troublesome_genes)=0;
+        has_denovo_mutation(in_troublesome_genes,:)=0;
+    end
+    
+ 
     
     %%
     
@@ -359,9 +384,9 @@ for k=1:numel(subjects)
     
     QualSort=0; %set 1 to show mutations with lowest FQ scores up top, 0 to show in order on the genome
     
-    if show_clickable_tables==1;
+   if show_clickable_tables==1;
         clickable_snp_table(annotation_full(goodpos), Calls(goodpos,order), counts(:,goodpos,order), SampleNames(order), ScafNames, MutQual(goodpos), QualSort);
-    end
+   end
     
     %%  save table
     
