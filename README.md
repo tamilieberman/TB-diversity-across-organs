@@ -3,7 +3,7 @@ TB-diversity-across-organs
 ================
 
 
-Code and intermediate files for reproducing the figures from "Genomic diversity in autopsy samples reveals within-host dissemination of HIV-associated Mycobacterium tuberculosis ", by Tami D Lieberman, Douglas Wilson, Reshma Misra, Lealia L Xiong, Prashini Moodley, Ted Cohen*, and Roy Kishony*
+Code and intermediate files for reproducing the figures from "Genomic diversity in autopsy samples reveals within-host dissemination of HIV-associated Mycobacterium tuberculosis", by Tami D Lieberman, Douglas Wilson, Reshma Misra, Lealia L Xiong, Prashini Moodley, Ted Cohen^, and Roy Kishony^  (^co-senior authors)
  <br> <br>
 
 If you are applying these scripts to your own data, it is strongly recommended that you investigate your raw data carefully and adjust parameters to suit your genome, coverage, etc. If you are having trouble understanding these scripts or how to use them, would like additional functionality/flexibility, or have other questions, feel free to contact Tami Lieberman (Email address is easy to find at other locations.). <br>
